@@ -1,0 +1,6 @@
+tensorflow==2.13.0
+numpy==1.23.2
+matplotlib==3.9.2
+scikit-learn==1.2.0
+pandas==1.4.3
+neuralforecast==3.0.0
