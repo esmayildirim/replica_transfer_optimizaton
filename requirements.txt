@@ -4,3 +4,5 @@ matplotlib==3.9.2
 scikit-learn==1.2.0
 pandas==1.4.3
 neuralforecast==3.0.0
+simplejson==3.20.1
+boto3==1.38.0
