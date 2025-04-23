@@ -20,16 +20,6 @@ It consists of:
   pip install boto3 numpy simplejson matplotlib python-dateutil
   
 
-## Directory Structure
-```
-project-root/
-│
-├── download.py           # Single-client download script
-├── threaded.py           # Orchestrator for all EC2 transfers
-├── log.txt               # Auto-generated log of test runs
-└── files/                # (optional) Download destination folder
-```
-
 ## Usage
 
 1. **Prepare your EC2 instances**
@@ -48,7 +38,7 @@ project-root/
 
    - `1MB.zip`: File size category
    - `2`: Poisson constant (average wait in seconds between downloads)
-   - `mohab-bucket*`: Buckets to cycle through
+   - `esma-bucket*`: Buckets to cycle through
 
 ## Experiment Scenarios
 Each experiment wave uses:
