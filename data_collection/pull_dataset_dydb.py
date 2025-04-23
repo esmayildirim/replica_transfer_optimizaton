@@ -1,4 +1,3 @@
-#This is the graphing part of the dataset
 import boto3, time, threading, subprocess, sys, datetime
 import matplotlib.pyplot as plt
 from dateutil.tz import tzutc
@@ -34,13 +33,8 @@ class DecimalEncoder(json.JSONEncoder):
     return json.JSONEncoder.default(self, obj)
 
 
-
-#main
-
-
 if __name__ == "__main__":
     dataset = pull_dataset("s3-metrics")
-    #stringObject = json.dumps(dataset, cls=DecimalEncoder)
     outfile = open("dataset_wAll.json", "w")
     json.dump(dataset, outfile, cls=DecimalEncoder,indent=4)
     outfile.close()
