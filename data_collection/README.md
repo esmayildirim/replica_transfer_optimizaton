@@ -43,7 +43,7 @@ project-root/
 
    **Example:**
    ```bash
-   python3 threaded.py 1MB.zip 2 mohab-bucket1 mohab-bucket2 mohab-bucket3
+   python3 threaded.py 1MB 2 esma-bucket1 esma-bucket2 esma-bucket3
    ```
 
    - `1MB.zip`: File size category
